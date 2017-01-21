@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 4282970081
+    locked: 0
+  - name: Pulse
+    uniqueID: 4146062481
+    locked: 0
+  - name: Orb
+    uniqueID: 2019863865
+    locked: 0
