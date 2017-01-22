@@ -18,7 +18,6 @@ public class Node : MonoBehaviour {
 
     void OnMouseDown()
     {
-
         Transform wave = Instantiate(wavePrefab, gameObject.transform.position, Quaternion.identity);
     }
 }

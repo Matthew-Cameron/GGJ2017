@@ -16,7 +16,6 @@ public class Wave : MonoBehaviour
     {
         LineDrawer = GetComponent<LineRenderer>();
         LineDrawer.material = new Material(Shader.Find("Particles/Additive"));
-        LineDrawer.useWorldSpace = true;
         LineDrawer.startColor = Color.red;
         LineDrawer.endColor = Color.red;
         LineDrawer.startWidth = 0.1f;
