@@ -50,3 +50,6 @@ TagManager:
   - name: Orb
     uniqueID: 2019863865
     locked: 0
+  - name: Click Area
+    uniqueID: 382119841
+    locked: 0

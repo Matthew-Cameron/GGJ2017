@@ -20,7 +20,7 @@ public class Wave : MonoBehaviour
         LineDrawer.endColor = Color.red;
         LineDrawer.startWidth = 0.1f;
         LineDrawer.endWidth = 0.1f;
-        Destroy(gameObject, 8);
+        Destroy(gameObject, 15);
     }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ public class Wave : MonoBehaviour
     {
         Size = (int)((1f / ThetaScale) + 1f);
         LineDrawer.numPositions = Size;
-        radius = radius + 0.04f;
+        radius = radius + 0.1f;
         for (int i = 0; i < Size; i++)
         {
             Theta += (2.0f * Mathf.PI * ThetaScale);
