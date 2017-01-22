@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 29370243}
   - component: {fileID: 29370242}
   - component: {fileID: 29370241}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Top (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 77990641}
   - component: {fileID: 77990640}
   - component: {fileID: 77990639}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Top (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 120236665}
   - component: {fileID: 120236664}
   - component: {fileID: 120236667}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,7 +378,7 @@ GameObject:
   - component: {fileID: 225712085}
   - component: {fileID: 225712084}
   - component: {fileID: 225712083}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Bottom (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 390488105}
   - component: {fileID: 390488104}
   - component: {fileID: 390488103}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Bottom (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -562,7 +562,7 @@ GameObject:
   - component: {fileID: 505125431}
   - component: {fileID: 505125430}
   - component: {fileID: 505125429}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Top (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -654,7 +654,7 @@ GameObject:
   - component: {fileID: 510083667}
   - component: {fileID: 510083666}
   - component: {fileID: 510083665}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Top (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -745,7 +745,6 @@ GameObject:
   - component: {fileID: 609818408}
   - component: {fileID: 609818407}
   - component: {fileID: 609818409}
-  - component: {fileID: 609818410}
   m_Layer: 0
   m_Name: Transparent
   m_TagString: Untagged
@@ -812,23 +811,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a6a5fa13e6a164b898f2274809d3a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnDelay: 5
+  spawnDelay: 1
   pillar: {fileID: 1154313434208846, guid: 0403e909f56908b4eafce917b2efecb2, type: 2}
   wavePrefab: {fileID: 4087573616871180, guid: b195b5f4bb67145419e6647f85b53de4, type: 2}
---- !u!114 &609818410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 609818406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69379fde1317c9e489775e29ae57ebe1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wavePrefab: {fileID: 0}
-  ThetaScale: 0.01
-  radius: 3
 --- !u!1 &697763222
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,7 +825,7 @@ GameObject:
   - component: {fileID: 697763225}
   - component: {fileID: 697763224}
   - component: {fileID: 697763223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Bottom (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -932,7 +917,7 @@ GameObject:
   - component: {fileID: 884427366}
   - component: {fileID: 884427365}
   - component: {fileID: 884427364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Bottom (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1111,7 +1096,7 @@ GameObject:
   - component: {fileID: 1076404054}
   - component: {fileID: 1076404053}
   - component: {fileID: 1076404052}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Top (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1203,7 +1188,7 @@ GameObject:
   - component: {fileID: 1235336713}
   - component: {fileID: 1235336712}
   - component: {fileID: 1235336711}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Top (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1295,7 +1280,7 @@ GameObject:
   - component: {fileID: 1312960685}
   - component: {fileID: 1312960684}
   - component: {fileID: 1312960683}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Top (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1387,7 +1372,7 @@ GameObject:
   - component: {fileID: 1510887168}
   - component: {fileID: 1510887167}
   - component: {fileID: 1510887166}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Top (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1479,7 +1464,7 @@ GameObject:
   - component: {fileID: 1591251061}
   - component: {fileID: 1591251060}
   - component: {fileID: 1591251059}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Top (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1571,7 +1556,7 @@ GameObject:
   - component: {fileID: 1653308972}
   - component: {fileID: 1653308971}
   - component: {fileID: 1653308970}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Bottom (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1663,7 +1648,7 @@ GameObject:
   - component: {fileID: 1663347554}
   - component: {fileID: 1663347553}
   - component: {fileID: 1663347552}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Bottom (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1755,7 +1740,7 @@ GameObject:
   - component: {fileID: 1671782798}
   - component: {fileID: 1671782797}
   - component: {fileID: 1671782796}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Bottom (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1847,7 +1832,7 @@ GameObject:
   - component: {fileID: 1921999356}
   - component: {fileID: 1921999355}
   - component: {fileID: 1921999354}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Bottom (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2031,7 +2016,7 @@ GameObject:
   - component: {fileID: 2108091385}
   - component: {fileID: 2108091384}
   - component: {fileID: 2108091383}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable Area Bottom (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

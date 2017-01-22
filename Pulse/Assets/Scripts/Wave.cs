@@ -36,6 +36,8 @@ public class Wave : MonoBehaviour
             float x = radius * Mathf.Cos(Theta);
             float y = radius * Mathf.Sin(Theta);
             LineDrawer.SetPosition(i, new Vector3(x, y, -2));
+            CircleCollider2D coll = gameObject.GetComponent<CircleCollider2D>();
+            coll.radius = radius;
 
         }
     }

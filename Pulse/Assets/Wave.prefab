@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 58207865750807652}
   - component: {fileID: 114949234904234652}
   - component: {fileID: 120402830326570364}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Wave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,9 +65,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1738625243481690}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b68618ebc13581540904a2cf23a888f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 91ee55d8b2fd4354bb717e9d6a162bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wavePrefab: {fileID: 0}
 --- !u!120 &120402830326570364
 LineRenderer:
   m_ObjectHideFlags: 1

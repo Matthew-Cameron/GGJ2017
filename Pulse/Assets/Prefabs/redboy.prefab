@@ -21,7 +21,9 @@ GameObject:
   - component: {fileID: 4291277609292276}
   - component: {fileID: 212803982455981964}
   - component: {fileID: 50846632178451038}
-  m_Layer: 0
+  - component: {fileID: 114387155717481628}
+  - component: {fileID: 58163548465663280}
+  m_Layer: 9
   m_Name: redboy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,6 +63,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &58163548465663280
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1154313434208846}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &114387155717481628
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1154313434208846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c7202ed99225c44961f786e428bc70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212803982455981964
 SpriteRenderer:
   m_ObjectHideFlags: 1
