@@ -137,8 +137,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnDelay: 1
   checkColor: {r: 0, g: 0, b: 0, a: 0}
-  pillar: {fileID: 1940390311396604, guid: 832b02739211d9749910c4e7c4925571, type: 2}
+  pillar: {fileID: 1940390311396604, guid: 8971ddfbc50f32b4aafb84992cfcdd71, type: 2}
+  redPillar: {fileID: 1858154773008706, guid: 91b0008c74224ae429779b5876fe39a1, type: 2}
   wavePrefab: {fileID: 4410417130180678, guid: b195b5f4bb67145419e6647f85b53de4, type: 2}
+  spawnCount: 0
 --- !u!212 &664104157
 SpriteRenderer:
   m_ObjectHideFlags: 0
