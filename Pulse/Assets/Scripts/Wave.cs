@@ -17,8 +17,8 @@ public class Wave : MonoBehaviour
     {
         LineDrawer = GetComponent<LineRenderer>();
         LineDrawer.material = new Material(Shader.Find("Particles/Additive"));
-        LineDrawer.startColor = Color.red;
-        LineDrawer.endColor = Color.red;
+        LineDrawer.startColor = Node.waveColor;
+        LineDrawer.endColor = Node.waveColor;
         LineDrawer.startWidth = 0.1f;
         LineDrawer.endWidth = 0.1f;
         Destroy(gameObject, 15);
@@ -42,8 +42,10 @@ public class Wave : MonoBehaviour
         }
     }
 
-    void OnMouseDown() {
+    void OnMouseOver() {
+    
         Transform wave = Instantiate(wavePrefab, gameObject.transform.position, Quaternion.identity);
+
     }
 
 }
