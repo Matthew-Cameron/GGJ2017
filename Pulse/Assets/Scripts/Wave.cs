@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Wave : MonoBehaviour
 {
+    public Transform wavePrefab;
 
     public float ThetaScale = 0.01f;
     public float radius = 3f;
@@ -37,6 +38,10 @@ public class Wave : MonoBehaviour
             LineDrawer.SetPosition(i, new Vector3(x, y, -2));
 
         }
+    }
+
+    void OnMouseDown() {
+        Transform wave = Instantiate(wavePrefab, gameObject.transform.position, Quaternion.identity);
     }
 
 }
