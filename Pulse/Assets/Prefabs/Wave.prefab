@@ -50,11 +50,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1738625243481690}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1521c8f895d0a064c8d7a2ca8ab8848d, type: 3}
+  m_Script: {fileID: 11500000, guid: 69379fde1317c9e489775e29ae57ebe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ThetaScale: 0.01
-  radius: 0.01
+  radius: 3
 --- !u!120 &120869833056049062
 LineRenderer:
   m_ObjectHideFlags: 1
