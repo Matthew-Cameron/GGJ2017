@@ -28,7 +28,7 @@ public class Wave : MonoBehaviour
     {
         Size = (int)((1f / ThetaScale) + 1f);
         LineDrawer.numPositions = Size;
-        radius = radius + 0.01f;
+        radius = radius + 0.04f;
         for (int i = 0; i < Size; i++)
         {
             Theta += (2.0f * Mathf.PI * ThetaScale);
