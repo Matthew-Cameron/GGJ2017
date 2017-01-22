@@ -2,41 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wave : MonoBehaviour {
+public class Wave : MonoBehaviour
+{
 
-    public int segments;
-    public float radius;
-    LineRenderer line;
+    public float ThetaScale = 0.01f;
+    public float radius = 3f;
+    private int Size;
+    private LineRenderer LineDrawer;
+    private float Theta = 0f;
 
     // Use this for initialization
-    void Start () {
-        line = gameObject.GetComponent<LineRenderer>();
-
-        line.numPositions = segments + 1;
-        line.useWorldSpace = false;
-        CreatePoints();
-    }
-	
-	// Update is called once per frame
-	void Update () {
-	}
-
-    void CreatePoints()
+    void Start()
     {
-        float x;
-        float y;
-        float z = 0f;
+        LineDrawer = GetComponent<LineRenderer>();
+        LineDrawer.material = new Material(Shader.Find("Particles/Additive"));
+        LineDrawer.useWorldSpace = true;
+        LineDrawer.startColor = Color.red;
+        LineDrawer.endColor = Color.red;
+        LineDrawer.startWidth = 0.1f;
+        LineDrawer.endWidth = 0.1f;
+        Destroy(gameObject, 8);
+    }
 
-        float angle = 0f;
-
-        for (int i = 0; i < (segments + 1); i++)
+    // Update is called once per frame
+    void Update()
+    {
+        Size = (int)((1f / ThetaScale) + 1f);
+        LineDrawer.numPositions = Size;
+        radius = radius + 0.01f;
+        for (int i = 0; i < Size; i++)
         {
-            x = Mathf.Sin(Mathf.Deg2Rad * angle);
-            y = Mathf.Cos(Mathf.Deg2Rad * angle);
-            z = 5;
-            line.SetPosition(i, new Vector3(x, y, z) * radius);
-            angle += (360f / segments);
+            Theta += (2.0f * Mathf.PI * ThetaScale);
+            float x = radius * Mathf.Cos(Theta);
+            float y = radius * Mathf.Sin(Theta);
+            LineDrawer.SetPosition(i, new Vector3(x, y, -2));
+
         }
     }
-}
 
+}
