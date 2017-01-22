@@ -12,8 +12,9 @@ public class Pillar : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+        pillar = pillar;
         InvokeRepeating("Spawn", 2, spawnDelay);
-        checkColor = Color.red;
+        checkColor = pillar.GetComponent<Color>();
     }
 
     // Update is called once per frame
