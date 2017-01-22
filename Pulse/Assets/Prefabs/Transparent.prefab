@@ -50,10 +50,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1530295404320360}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8a6a5fa13e6a164b898f2274809d3a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 22774bd50e7cff640baed3e59b44dc5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnDelay: 1
+  spawnDelay: 0
+  checkColor: {r: 0, g: 0, b: 0, a: 0}
   pillar: {fileID: 1605271412194606, guid: 0403e909f56908b4eafce917b2efecb2, type: 2}
   wavePrefab: {fileID: 4410417130180678, guid: b195b5f4bb67145419e6647f85b53de4, type: 2}
 --- !u!114 &114826457813928056

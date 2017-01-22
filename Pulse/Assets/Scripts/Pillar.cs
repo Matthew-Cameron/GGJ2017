@@ -5,6 +5,7 @@ using UnityEngine;
 public class Pillar : MonoBehaviour {
 
     public float spawnDelay;
+    public Color checkColor;
     public GameObject pillar;
     public Transform wavePrefab;
     Queue<GameObject> activePillars = new Queue<GameObject>();
@@ -12,14 +13,11 @@ public class Pillar : MonoBehaviour {
     // Use this for initialization
     void Start() {
         InvokeRepeating("Spawn", 2, spawnDelay);
+        checkColor = Color.red;
     }
 
     // Update is called once per frame
     void Update() {
-        //if (Input.GetMouseButtonDown(0)) {
-            //var screenPos = Input.mousePosition;  
-                //Instantiate(wavePrefab, GameObject.transform.position, Quaternion.identity);           
-        //}
     }
 
     void Spawn() {
@@ -29,6 +27,7 @@ public class Pillar : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        Destroy(gameObject);
+        if (coll.gameObject.GetComponent<LineRenderer>().startColor == checkColor)
+            Destroy(gameObject);
     }
 }

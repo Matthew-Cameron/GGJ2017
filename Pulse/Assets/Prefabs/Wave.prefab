@@ -90,7 +90,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wavePrefab: {fileID: 0}
   ThetaScale: 0.01
-  radius: 3
+  radius: 0.01
 --- !u!120 &120138740577206496
 LineRenderer:
   m_ObjectHideFlags: 1

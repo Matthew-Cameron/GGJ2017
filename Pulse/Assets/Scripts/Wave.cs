@@ -7,7 +7,7 @@ public class Wave : MonoBehaviour
     public Transform wavePrefab;
 
     public float ThetaScale = 0.01f;
-    public float radius = 3f;
+    public float radius = .01f;
     private int Size;
     private LineRenderer LineDrawer;
     private float Theta = 0f;
@@ -19,9 +19,9 @@ public class Wave : MonoBehaviour
         LineDrawer.material = new Material(Shader.Find("Particles/Additive"));
         LineDrawer.startColor = Node.waveColor;
         LineDrawer.endColor = Node.waveColor;
-        LineDrawer.startWidth = 0.1f;
-        LineDrawer.endWidth = 0.1f;
-        Destroy(gameObject, 15);
+        LineDrawer.startWidth = 0.5f;
+        LineDrawer.endWidth = 0.5f;
+        Destroy(gameObject, 3);
     }
 
     // Update is called once per frame
@@ -29,7 +29,7 @@ public class Wave : MonoBehaviour
     {
         Size = (int)((1f / ThetaScale) + 1f);
         LineDrawer.numPositions = Size;
-        radius = radius + 0.1f;
+        radius = radius + 0.07f;
         for (int i = 0; i < Size; i++)
         {
             Theta += (2.0f * Mathf.PI * ThetaScale);
@@ -40,12 +40,6 @@ public class Wave : MonoBehaviour
             coll.radius = radius;
 
         }
-    }
-
-    void OnMouseOver() {
-    
-        Transform wave = Instantiate(wavePrefab, gameObject.transform.position, Quaternion.identity);
-
     }
 
 }
