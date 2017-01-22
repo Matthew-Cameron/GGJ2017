@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 5
-  pillar: {fileID: 1691762128695542, guid: 0403e909f56908b4eafce917b2efecb2, type: 2}
+  pillar: {fileID: 1154313434208846, guid: 0403e909f56908b4eafce917b2efecb2, type: 2}
 --- !u!1 &1017731784
 GameObject:
   m_ObjectHideFlags: 0
