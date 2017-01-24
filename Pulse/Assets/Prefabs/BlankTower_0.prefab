@@ -91,7 +91,9 @@ MonoBehaviour:
   spawnDelay: 0
   checkColor: {r: 0, g: 0, b: 0, a: 0}
   pillar: {fileID: 0}
+  redPillar: {fileID: 0}
   wavePrefab: {fileID: 0}
+  spawnCount: 0
 --- !u!212 &212853496536420748
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -124,6 +126,6 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b0ef2d720408cf04c9396361653a9c83, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0

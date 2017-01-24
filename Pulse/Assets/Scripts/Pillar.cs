@@ -17,7 +17,6 @@ public class Pillar : MonoBehaviour {
         pillar = pillar;
         redPillar = redPillar;
         InvokeRepeating("Spawn", 2, spawnDelay);
-//        checkColor = pillar.GetComponent<Color>();
     }
 
     // Update is called once per frame
@@ -33,8 +32,6 @@ public class Pillar : MonoBehaviour {
             CancelInvoke("Spawn");
             InvokeRepeating("nextSpawn", 2, spawnDelay);
         }
-
-
     }
 
     void nextSpawn()
@@ -45,7 +42,7 @@ public class Pillar : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-  //      if (coll.gameObject.GetComponent<LineRenderer>().startColor == checkColor)
+        if (coll.gameObject.GetComponent<LineRenderer>().startColor == gameObject.GetComponent<SpriteRenderer>().color) 
             Destroy(gameObject);
     }
 }
