@@ -7,12 +7,15 @@ public class Pillar : MonoBehaviour {
     public Color checkColor;
     public GameObject pillar;
     public GameObject redPillar;
-    public int spawnCount;
+    public int levelCount;
+    public int levelCheck;
     Queue<GameObject> activePillars = new Queue<GameObject>();
 
     // Use this for initialization
     void Start() {
-        InvokeRepeating("Spawn", 2, spawnDelay);
+        levelCount = 5;
+        levelCheck = 5;
+        Spawn();
     }
 
     // Update is called once per frame
@@ -20,13 +23,8 @@ public class Pillar : MonoBehaviour {
     }
 
     void Spawn() {
-        spawnCount++;
-        GameObject obj = Instantiate(pillar.gameObject, new Vector3(Random.Range(-18, 18), Random.Range(-25, 25), 0), Quaternion.identity);
-        activePillars.Enqueue(obj);
-        if (spawnCount >= 10)
-        {
-            CancelInvoke("Spawn");
-            InvokeRepeating("nextSpawn", 2, spawnDelay);
+        for (int i = 0; i < levelCount; i++) {
+            GameObject obj = Instantiate(pillar.gameObject, new Vector3(Random.Range(-18, 18), Random.Range(-25, 25), 0), Quaternion.identity);
         }
     }
 
@@ -38,7 +36,13 @@ public class Pillar : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.GetComponent<LineRenderer>().startColor == gameObject.GetComponent<SpriteRenderer>().color) 
+        if (coll.collider.GetComponent<LineRenderer>().startColor == gameObject.GetComponent<SpriteRenderer>().color) {
             Destroy(gameObject);
+            levelCheck--;
+        }
+
+ //       if (levelCheck == 0)
+  //          UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1");
+
     }
 }
